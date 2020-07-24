@@ -14,9 +14,9 @@ class Main(App, Configure, Command, HttpConfig, HttpsConfig, HostConfig):
         self.OS = os
         # .env configure
         self.CURRENT_DIR = os.path.dirname(os.path.realpath(__file__)) + "/"
-        self.DEFAULT_DIR = os.getenv("DEFAULT_DIR")
+        self.DEFAULT_DIR = os.getenv("DEFAULT_DIR") + "/"
         self.DEFAULT_USER = os.getenv("DEFAULT_USER")
-        self.DEFAULT_SSL_LOCATION = os.getenv("DEFAULT_SSL_LOCATION")
+        self.DEFAULT_SSL_LOCATION = os.getenv("DEFAULT_SSL_LOCATION") + "/"
         
         self.ENV_FILE = os.path.exists(self.CURRENT_DIR + ".env")
         self.AppRunnning(self)
