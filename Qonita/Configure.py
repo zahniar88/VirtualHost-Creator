@@ -21,7 +21,7 @@ class Configure:
 
     # melakukan pengambilan data contoh dari file .env.example
     def GetEnvFile(self):
-        f = open("./.env.example", "r")
+        f = open(self.App.Main.CURRENT_DIR + ".env.example", "r")
         self.ENV_TEXT = f.read()
         f.close()
         
@@ -45,7 +45,7 @@ class Configure:
         
     # membuat file .env
     def CreateEnvFile(self):
-        f = open("./.env", "w+")
+        f = open(self.App.Main.CURRENT_DIR + ".env", "w+")
         f.write(self.ENV_HAS_CHANGE)
         f.close()
         self.App.Main.OS.system("clear")
