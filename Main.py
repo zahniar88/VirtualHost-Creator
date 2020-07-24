@@ -17,7 +17,7 @@ class Main(App, Configure, Command, HttpConfig, HttpsConfig, HostConfig):
         self.DEFAULT_USER = os.getenv("DEFAULT_USER")
         self.DEFAULT_SSL_LOCATION = os.getenv("DEFAULT_SSL_LOCATION")
         
-        self.ENV_FILE = os.path.exists(".env")
+        self.ENV_FILE = os.path.exists("./.env")
         self.AppRunnning(self)
         
 # inisialisasi class main
