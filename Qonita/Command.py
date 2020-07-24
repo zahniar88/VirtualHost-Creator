@@ -11,7 +11,7 @@ class Command:
     
     # mengambil data menu
     def CommandGetMenu(self):
-        f = open("./Txt/Menu.txt", "r")
+        f = open(self.App.Main.CURRENT_DIR + "Txt/Menu.txt", "r")
         self.COMMAND_MENU = f.read()
         f.close()
 
