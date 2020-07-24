@@ -40,7 +40,7 @@ class Command:
             self.App.Main.Host(self)
             self.App.Main.DeleteHost()
         elif self.MENU == 6:
-            self.App.Main.OS.remove('.env')
+            self.App.Main.OS.remove(self.App.Main.CURRENT_DIR + '.env')
             self.App.Main.ENV_FILE = False
             self.App.AppRun()
         else:

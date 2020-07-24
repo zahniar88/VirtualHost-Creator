@@ -12,7 +12,7 @@ class HttpConfig:
     
     # mengambil contoh data Http
     def HttpGetFileText(self):
-        f = open("./Txt/Http.txt", "r")
+        f = open(self.Command.App.Main.CURRENT_DIR + "Txt/Http.txt", "r")
         self.FILE_HTTP = f.read()
         f.close()
         
