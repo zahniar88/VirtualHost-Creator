@@ -6,12 +6,11 @@
  ╚══▀▀═╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝         ╚═══╝   ╚═╝
                                                             
 Pilihan menu yang dapat dilakukan:
-1. Membuat vhost dengan http
-2. Membuat vhost dengan https
-3. Mengaktifkan vhost
-4. Menonaktifkan vhost
-5. Menghapus vhost yang sudah ada
-6. Mengatur ulang setingan .env
+1. Membuat vhost dengan http        5. Menghapus vhost yang sudah ada
+2. Membuat vhost dengan https       6. Mengatur ulang setingan .env
+3. Mengaktifkan vhost               7. Mengaktifkan Server (Apache2, MySQL, UFW)
+4. Menonaktifkan vhost              8. Menonaktifkan Server (Apache2, MySQL, UFW)
+
 0. keluar
 Peringatan: 
 - program ini meminta izin anda untuk membuat file pada direktori yang ditentukan

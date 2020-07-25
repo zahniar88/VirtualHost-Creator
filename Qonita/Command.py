@@ -24,7 +24,7 @@ class Command:
         
     # melakukan pengecekan menu yang dipilih pengguna
     def CommandGetUserSelectMenu(self):
-        if self.MENU not in (1, 2, 3, 4, 5, 6, 0):
+        if self.MENU not in (1, 2, 3, 4, 5, 6, 7, 8, 0):
             self.CommandRun()
         elif self.MENU == 1:
             self.App.Main.HttpRunning(self)
@@ -42,6 +42,12 @@ class Command:
         elif self.MENU == 6:
             self.App.Main.OS.remove(self.App.Main.CURRENT_DIR + '.env')
             self.App.Main.ENV_FILE = False
+            self.App.AppRun()
+        elif self.MENU == 7:
+            self.App.Main.OS.system("sudo systemctl start apache2 mysql ufw")
+            self.App.AppRun()
+        elif self.MENU == 8:
+            self.App.Main.OS.system("sudo systemctl stop apache2 mysql ufw")
             self.App.AppRun()
         else:
             self.App.AppConfirmBeforeExit()
